@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#see {
+			display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  min-width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="show()"> Generate</button>
+	<input type="text" id="start" >
+	<input type="text" id="end">
+<p id ="see"></p>
+</body>
+</html>
+
+<script>
+	function show() {
+		see.innerHTML = ``
+	let a = document.getElementById('start').value;
+	let b = document.getElementById('end').value
+
+	for (let c = a; c <= b; c++){
+	for (let i = 1; i <= 12; i++) {
+		see.innerHTML += `${c} * ${i} = ${c*i}<br>`;
+	}
+		see.innerHTML += `<p></p><br>`
+	}
+
+}
+
+
+// let a = setTimeout(myalert,3000)
+
+// function myalert() {
+// 	alert()
+// }
+// clearTimeout(a)
+
+// let terminate;
+// let z = 0
+// show()
+// function show() {
+// 	terminate = setInterval(function(){
+// 		z++
+// 		console.log(z)
+// 		if(z==5){
+// 			clearInterval(terminate)
+// 			console.log('i am done!');
+// 		}
+// 	}, 5000)
+// }
+
+	</script>
+
+<!-- for (let i = 1; i <= 100; i++) {
+	if (i % 15 == 0 ) {
+	   console.log("FizzBuzz")
+   }
+   else if(i % 3 == 0){
+	   console.log("Fizz")
+
+   }else if(i % 5 == 0) {
+	   console.log("Buzz")
+   }
+   else {
+   console.log(i);
+   }
+} -->
